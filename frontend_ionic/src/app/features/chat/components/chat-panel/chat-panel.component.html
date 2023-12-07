@@ -1,0 +1,11 @@
+<div class="main-chat-container">
+  <div class="chat-container">
+    <div *ngFor="let message of messages" class="message-container-box">
+      <div class="message-container-main" [ngClass]="{'message-receive': message.sender === 'user', 'message-send': message.sender !== 'user'}">
+        <div class="message-container" [ngClass]="{'right': message.sender === 'user', 'left': message.sender !== 'user'}">
+          <p class="message-item">{{ message.content }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

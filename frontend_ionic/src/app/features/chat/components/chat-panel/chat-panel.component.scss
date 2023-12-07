@@ -1,0 +1,58 @@
+/* styles.scss or your component's SCSS file */
+.main-chat-container {
+  width: 100%;
+  height: 100vh; /* 100% of the viewport height */
+  background-color: rgb(39, 42, 42);
+  display: flex;
+  justify-content: center;
+}
+
+.chat-container {
+  width: 100%;
+  max-width: 800px; /* Set your desired max-width for the chat container */
+  background-color: white;
+}
+
+.message-container-main {
+  width: 100%;
+  display: flex;
+}
+
+.message-container {
+  padding: 10px;
+  border-radius: 5px;
+  max-width:450px;
+  width: 100%;
+  word-wrap: break-word;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-color: #ffffff; /* Set your desired background color */
+}
+
+.message-item {
+  margin: 0; /* Remove default margin for paragraphs */
+}
+
+.message-receive {
+  justify-content: flex-end; /* Align to the right for received messages */
+}
+
+.message-send {
+  justify-content: flex-start; /* Align to the left for sent messages */
+}
+
+.right {
+  background-color: #5cb85c; /* Green for user's messages */
+  color: white;
+}
+
+.left {
+  background-color: #f0f0f0; /* Gray for others' messages */
+}
+
+/* Optional: Add media queries for better responsiveness on smaller screens */
+@media (max-width: 800px) {
+  .chat-container {
+    max-width: 100%; /* Adjust max-width for smaller screens */
+  }
+}
