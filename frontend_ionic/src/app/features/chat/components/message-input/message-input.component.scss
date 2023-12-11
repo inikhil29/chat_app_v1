@@ -1,0 +1,22 @@
+.message-input-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .input-design-box{
+    background-color: white;
+    padding-left: 10px !important;
+    padding-right: 5px !important;
+    border-radius: 11px;
+    border: none;
+  } 
+  .send-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }

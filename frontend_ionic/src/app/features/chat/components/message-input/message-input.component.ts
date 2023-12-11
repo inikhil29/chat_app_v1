@@ -1,14 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-message-input',
   templateUrl: './message-input.component.html',
-  styleUrls: [],
+  styleUrls: ['./message-input.component.scss'],
 })
-export class MessageInputComponent  implements OnInit {
+export class MessageInputComponent {
+  @Output() sendMessage = new EventEmitter<string>();
+  message: string = '';
 
-  constructor() { }
-
-  ngOnInit() {}
-
+  onSend() {
+    if (this.message.trim() !== '') {
+      this.sendMessage.emit(this.message);
+      this.message = ''; // Clear the input after sending
+    }
+  }
 }

@@ -16,6 +16,16 @@ export class ChatPanelComponent  implements OnInit {
     { sender: 'user', content: 'Hello! this is a long message used for testing , thishe message here' },
     { sender: 'other', content: 'Hi there!, The is a long.' },
     { sender: 'user', content: 'Hello! this is a long message used for testing , this is a message with many words. I dont know what to type now so i am going to end the message here' },
+    { sender: 'other', content: 'Hi there!, The is a long test message that is received from user this is for test.' },
+    { sender: 'user', content: 'Hello! this is a long message used for testing , this is a message with many words. I dont know what to type now so i am going to end the message here' },
+    { sender: 'user', content: 'Hello! this is a long message used for testing , thishe message here' },
+    { sender: 'other', content: 'Hi there!, The is a long.' },
+    { sender: 'user', content: 'Hello! this is a long message used for testing , this is a message with many words. I dont know what to type now so i am going to end the message here' },
+    { sender: 'other', content: 'Hi there!, The is a long test message that is received from user this is for test.' },
+    { sender: 'user', content: 'Hello! this is a long message used for testing , this is a message with many words. I dont know what to type now so i am going to end the message here' },
+    { sender: 'user', content: 'Hello! this is a long message used for testing , thishe message here' },
+    { sender: 'other', content: 'Hi there!, The is a long.' },
+    { sender: 'user', content: 'Hello! this is a long message used for testing , this is a message with many words. I dont know what to type now so i am going to end the message here' },
     // Add more messages as needed
   ];
   

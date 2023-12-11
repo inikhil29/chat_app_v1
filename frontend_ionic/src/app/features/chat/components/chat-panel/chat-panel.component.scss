@@ -1,16 +1,11 @@
 /* styles.scss or your component's SCSS file */
 .main-chat-container {
   width: 100%;
-  height: 100vh; /* 100% of the viewport height */
-  background-color: rgb(39, 42, 42);
-  display: flex;
-  justify-content: center;
+  height: 100%; /* 100% of the viewport height */
 }
 
 .chat-container {
   width: 100%;
-  max-width: 800px; /* Set your desired max-width for the chat container */
-  background-color: white;
 }
 
 .message-container-main {
@@ -42,17 +37,10 @@
 }
 
 .right {
-  background-color: #5cb85c; /* Green for user's messages */
+  background-color: #529052d6; /* Green for user's messages */
   color: white;
 }
 
 .left {
-  background-color: #f0f0f0; /* Gray for others' messages */
-}
-
-/* Optional: Add media queries for better responsiveness on smaller screens */
-@media (max-width: 800px) {
-  .chat-container {
-    max-width: 100%; /* Adjust max-width for smaller screens */
-  }
+  background-color: #4f4c4c; /* Gray for others' messages */
 }

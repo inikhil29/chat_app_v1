@@ -1,3 +1,13 @@
-<p>
-  message-input works!
-</p>
+<ion-row class="message-input-container">
+  <ion-col size="10">
+    <ion-input
+      class="input-design-box"
+      [(ngModel)]="message"
+      placeholder="Type your message..."
+      clearInput
+    ></ion-input>
+  </ion-col>
+  <ion-col size="1" class="send-button" (click)="onSend()">
+    <ion-icon name="paper-plane-outline"></ion-icon>
+  </ion-col>
+</ion-row>

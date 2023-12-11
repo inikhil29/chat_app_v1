@@ -3,10 +3,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomePage } from './home.page';
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   redirectTo: 'chat_page_test',
+  //   pathMatch: 'full'
+  // },
   {
     path: '',
-    component: HomePage,
-  }
+    loadChildren: () => import('../features/chat/chat-components.module').then( m =>  m.ChatModule)
+  },
 ];
 
 @NgModule({
